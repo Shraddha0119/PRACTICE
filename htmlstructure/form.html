@@ -3,26 +3,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R.form</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: aqua;
+        }
+        .main{
+            /* border: 2px solid; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            height: 200px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-top: 80px;
+            background-color:aliceblue;
+            
+        }
+        label{
+            color: brown;
+            
+        }
+        button{
+            background-color: chartreuse;
+            margin-left: 100px;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Registration page</h1>
+    <div class="main">
     <form action="/index.html" method="POST">
+        <ul>
         <label>Enter your Name: </label>
         <input type="text" name="name"placeholder="Username.....">
         <br><br>
-        <label>Enter Your Email</label>
+        <label>Enter Your Email:</label>
         <input type="text" name="email" placeholder="email.........">
         <br><br>
-        <label> Enter your Password</label>
+        <label> Enter your Password:</label>
         <input type="text" name="password" placeholder=" Password.....">
         <br><br>
         <label> Gender:</label>
         <input type="radio" name="gender" value="male">male
         <input type="radio" name="gender" value="female">Female<br><br>
         <button value="submit" type="submit">submit</button><br><br>
-    
-      
+        </ul>
     </form>
+    </div>
     
 </body>
 </html>
